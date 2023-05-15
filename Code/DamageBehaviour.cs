@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// 部位判定などのダメージ判定とコントロールを行うクラス
@@ -56,5 +57,6 @@ public class DamageBehaviour : PlayerBehaviour
 	{
 		//死亡判定・処理を書く
 		if (_hp <= 0) Destroy(gameObject);
+		SceneManager.LoadScene("GameOverScene");
 	}
 }
