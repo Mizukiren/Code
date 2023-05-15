@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
 		BASE,
 		AIM,
 		SHOOT,
-		RELOAD
+		RELOAD,
 	}
 	public STATE _state;						//プレイヤーの状態管理
 
